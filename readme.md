@@ -319,18 +319,18 @@ sudo chown -R seuUsuario:seuUsuario /home/seuUsuario/.ssh
 ## Importações de Banco de Dados
 ```bash
 # Importar banco a partir de um arquivo sql
-php artisan db:wipe && mysql -u root -p prjNexus < /home/lamego/Documentos/bancos/nexus/last.sql && echo "Importado com sucesso!"
-php artisan db:wipe && mysql -u root -p prjSingular < /home/lamego/Documentos/bancos/singular/last.sql && echo "Importado com sucesso!"
-php artisan db:wipe && mysql -u root -p prjLusitana < /home/lamego/Documentos/bancos/lusitana/last.sql && echo "Importado com sucesso!"
+php artisan db:wipe && mysql -u root -p prjNexus < /home/victor/Documentos/bancos/nexus/last.sql && echo "Importado com sucesso!"
+php artisan db:wipe && mysql -u root -p prjSingular < /home/victor/Documentos/bancos/singular/last.sql && echo "Importado com sucesso!"
+php artisan db:wipe && mysql -u root -p prjLusitana < /home/victor/Documentos/bancos/lusitana/last.sql && echo "Importado com sucesso!"
 
 # Importar banco a partir de um arquivo sql com barra de progresso
-php artisan db:wipe && pv /home/lamego/Documentos/bancos/nexus/last.sql | mysql -u root -p prjNexus && echo "Importado com sucesso!"
-php artisan db:wipe && pv /home/lamego/Documentos/bancos/singular/last.sql | mysql -u root -p prjSingular && echo "Importado com sucesso!"
-php artisan db:wipe && pv /home/lamego/Documentos/bancos/lusitana/last.sql | mysql -u root -p prjLusitana && echo "Importado com sucesso!"
+php artisan db:wipe && pv /home/victor/Documentos/bancos/nexus/last.sql | mysql -u root -p prjNexus && echo "Importado com sucesso!"
+php artisan db:wipe && pv /home/victor/Documentos/bancos/singular/last.sql | mysql -u root -p prjSingular && echo "Importado com sucesso!"
+php artisan db:wipe && pv /home/victor/Documentos/bancos/lusitana/last.sql | mysql -u root -p prjLusitana && echo "Importado com sucesso!"
 
 # Exportar banco para um arquivo sql
-mysqldump -u root -p prjNexus > /home/lamego/Documentos/bancos/nexus/last.sql && echo "Exportado com sucesso!"
-mysqldump -u root -p prjSingular > /home/lamego/Documentos/bancos/singular/last.sql && echo "Exportado com sucesso!"
-mysqldump -u root -p prjLusitana > /home/lamego/Documentos/bancos/lusitana/last.sql && echo "Exportado com sucesso!"
+mysqldump -u root -p prjNexus > /home/victor/Documentos/bancos/nexus/last.sql && echo "Exportado com sucesso!"
+mysqldump -u root -p prjSingular > /home/victor/Documentos/bancos/singular/last.sql && echo "Exportado com sucesso!"
+mysqldump -u root -p prjLusitana > /home/victor/Documentos/bancos/lusitana/last.sql && echo "Exportado com sucesso!"
 
 # Exportar banco para um arquivo sql com barra de progresso
